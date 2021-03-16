@@ -1,0 +1,26 @@
+
+#nav-bar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    left: 0;
+    background-color: rgb(29, 29, 29);
+    font-display: white;
+    height: 50px;
+}
+#nav-bar a{
+    color: white;
+    margin-inline: 50px;
+    float: right;
+    text-decoration: none; 
+}
+ 
+#welcome-section{
+     
+    background-color: rgb(218, 209, 197);
+    text-align: center;
+    padding: 100px;
+    
+    
+
+ }
