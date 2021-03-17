@@ -1,8 +1,9 @@
 
 *{
     margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-#nav-bar{
+#navbar{
     position: fixed;
     top:0;
     width: 100%;
@@ -11,7 +12,7 @@
     font-display: white;
     height: 50px;
 }
-#nav-bar a{
+#navbar a{
     color: white;
     margin-inline: 50px;
     float: right;
@@ -27,12 +28,14 @@
     
     
     
+    
 
  }
 
 
-#boundary{
+#tile-container{
     display: flex;
+    overflow-x: auto ;
 }
 
 #projects h1{
@@ -40,21 +43,27 @@
     
 } 
     
-#projectsContainer{
+#projects{
+    
     
 }
 
 .project-tile{
     
     width: 400px ;
-    height:300px;
+    height:230px;
     padding: 40px;
-    border: solid;
-    margin-inline: 5px
-   
-    
+    border: 1px solid;
+    margin-inline: 5px;
+    overflow: hidden;
+       
 }
 .project-tile img{
     max-width: 100%;
     max-height: 100%;
+}
+
+#contact{
+    text-align: center;
+    padding: 100px;
 } 
