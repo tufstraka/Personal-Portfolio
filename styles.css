@@ -48,7 +48,7 @@
     
 #projects{
     
-    
+      
     
 }
 
@@ -57,10 +57,12 @@
     width: 100vh ;
     height:50vh;
     padding: 40px;
-    border: 3px solid;
+    border: 3px solid rgb(29, 29, 29);
     margin-inline: 5px;
     overflow: hidden;
-    border-style: groove
+    border-style: groove;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg,silver, white);
        
 }
 .project-tile img{
@@ -108,7 +110,11 @@
     margin-left:10px;
 }
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    #nav-links {
+      display: flex;
+      
+    }
+    #nav-bar{
+        width: 100%;
     }
   }
