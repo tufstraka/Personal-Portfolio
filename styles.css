@@ -4,6 +4,9 @@
     font-family: 'Source Sans Pro', sans-serif;
     
 }
+.pic{
+    margin-top: 35px;
+}
 #navbar{
     position: fixed;
     top:0;
@@ -20,13 +23,16 @@
     text-decoration: none;
     margin-top: 15px; 
 }
+
+.intro{
+    
+}
  
 #welcome-section{
-     
-    
+        
     text-align: center;
     background-color: silver;      
-    padding: 100px
+    padding: 30px;
     
           
 
