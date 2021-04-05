@@ -33,6 +33,7 @@
     text-align: center;
     background-color: silver;      
     padding: 30px;
+    height: 520px;
     
           
 
@@ -62,6 +63,7 @@
 
 #mypic{
     box-shadow: 0 4px 8px  rgba(14, 13, 13, 0.2), 0 6px 20px  rgba(9, 8, 8, 0.19);
+    width: 100%;
 }
 .intro{
     display: flex;
@@ -153,5 +155,38 @@
 .contactBox{
     display: flex;
 }
-@media only screen and (max-width: 600px) {
+footer{
+    height: 60px;
+}
+#copy{
+    float: left;
+    margin: 30px
+}
+#power{
+    float: right;
+    margin: 30px;
+}
+@media only screen and (max-width: 800px) {
+    #navbar a{
+        float: left;
+        margin-inline: 10px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+    #welcome-section{
+       
+        height: 1100px
+        
+    }
+    #contactBox2{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    #pph-hireme{
+        display: none;
+    }
     }
