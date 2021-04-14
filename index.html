@@ -18,22 +18,33 @@
     <title>Kadima's Vault</title>
 </head>
 <body>
-
-    <nav id='navbar'>
-        <ul id='nav-links'>
-            <a href="#contact">Contact</a>
-            <a href='#projectsHeader'>Work/Projects</a>
-            <a target = '_blank' href='http://keithkadima.co'>Blog</a>
-            <a href='#welcome-section'>About</a>
-        
-        </ul>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Kadima's Vault</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-inverse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#welcome-section">About</a></li>
+              <li><a target = '_blank' href='http://keithkadima.co'>Blog</a></li>
+              <li><a href="#projectsHeader">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
     </nav>
     
     <div id = 'welcome-section' class='container'>
         <div class="intro row ">
             <div class="pic col-xs-4">
                 <h2>Hello 👋, You Found Me 😇  </h2>
-                <img id = 'mypic' src='src\me.png'>
+                <img id = 'mypic' src='src\me.png' class = 'img-fluid'>
                      
             </div>
             <div class="aboutme col-xs-4">
