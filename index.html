@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="src/cv.png">
     <script src="scripts.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <title>Kadima's Vault</title>
 </head>
@@ -23,19 +29,20 @@
         </ul>
     </nav>
     
-    <section id = 'welcome-section'>
-        <div class="intro">
-            <div class="pic">
+    <div id = 'welcome-section' class='container'>
+        <div class="intro row ">
+            <div class="pic col-xs-4">
                 <h1>Hello 👋, You Found Me 😇  </h1>
                 <img id = 'mypic' src='src\me.png'>
                      
             </div>
-            <div class="aboutme">
+            <div class="aboutme col-xs-4">
                 <h1>About Me</h1>
                 <p>My name is Keith Kadima, a student geospatial engineer and tech enthusiast. I am currently learning backend web development while polishing my frontend skills as 
                     a co curricular activity. 
                 </p>
-                <br>
+            </div>    
+            <div class='skills col-xs-4'>
                 <h2>Skills</h2>
                 <br>
                 <label for="HTML">HTML</label>
@@ -56,49 +63,57 @@
                 <br>
                 <br>
                 <p>Scroll down to check out some of my projects ⤵   </p>
-            </div>
+            </div>    
+                     
         </div>
         
         
-    </section>
+    </div>
 
     
-    <section id ='projects'>
+    <div class ='container' id='projects'>
         
         <h1 id ='projectsHeader'>Projects</h1>
         
-        <div id='tile-container'>
-            <div class="project-tile">
-                <h4>Product Landing Page</h4>
-                <img src="Product.png" alt="" class="">
-                <p class=""></p>
-                <button onClick='window.location.href="https://kadimakeith.github.io/Product-landing-page/"'>Live Project</button> <br> <br>
-                <button onClick='window.location.href="https://github.com/kadimakeith/Product-landing-page'>Source code</button>
+        <div class = 'row'>
+            
+            <div  class="card col-sm-4" >
+                <img src="Product.png" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Product Landing Page</h5>
+                    <a href="https://kadimakeith.github.io/Product-landing-page/" class="btn btn-primary">Live Project</a> <br> 
+                    <a href="https://github.com/kadimakeith/Product-landing-page" class="btn btn-primary">Source code</a>
+                </div>
+                           
+            </div>
+
+            <div class="card col-sm-3" >
+                <img src="Survey.png" alt="" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Survey Form</h5>
+                    <a href="https://kadimakeith.github.io/Survey-Form/" class="btn btn-primary" >Live Project</a> <br> 
+                    <a target='_blank' href="https://github.com/kadimakeith/Survey-Form" class="btn btn-primary">Source code</a>
+                </div>
+                
+            </div>    
+            <div class="card col-sm-4">
+                <img src="ScreenCapture.png" alt="" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Netflix clone</h5>
+                    <a  href="https://netflix-clone-ac061.web.app" class="btn btn-primary">Live Project</a> <br> 
+                    <a  href="https://github.com/kadimakeith/Netflix-Clone" class="btn btn-primary">Source code</a>
+                </div>
                 
             </div>
-            <div class="project-tile">
-                <h4>Survey Form</h4>
-                <img src="Survey.png" alt="" class="">
-                <p class=""></p>
-                <button onClick='window.location.href="https://kadimakeith.github.io/Survey-Form/"'>Live Project</button> <br> <br>
-                <button target='_blank' type='button' onClick='window.location.href="https://github.com/kadimakeith/Survey-Form"'>Source code</button>
-            </div>    
-            <div class="project-tile">
-                <h4>Netflix Clone</h4>
-                <img src="ScreenCapture.png" alt="" class="">
-                <p class=""></p>
-                <button  onClick='window.location.href="https://netflix-clone-ac061.web.app"'>Live Project</button> <br> <br>
-                <button onClick='window.location.href="https://github.com/kadimakeith/Netflix-Clone"'>Source code</button>
-            </div>
-                       
+              
 
         </div>
        
 
-    </section>
-    <section id='contact'>
-        <div class="contactBox">
-            <div class ="contactBox2">
+    </div>
+    <div id='contact'>
+        <div class="contactBox ">
+            <div class ="contactBox2 ">
                 <h2>Need a website?</h2> <br>
                 <br>
                 <ul>
@@ -108,31 +123,18 @@
             </div>
         
        
-        <div id="pph-hireme"></div>
-        <script type="text/javascript">
-        (function(d, s) {
-            var useSSL = 'https:' == document.location.protocol;
-            var js, where = d.getElementsByTagName(s)[0],
-            js = d.createElement(s);
-            js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/3711571834/5564453.js?width=336&height=142&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
-            try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-        }(document, 'script'));
-        </script>
+        
         </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        
-    });
-    </script>
-    <footer>
-        <p id='copy'>Copyright © 2021</p>
-        <p id='power'>Powered by Keith Kadima</p>
+    </div>
 
-        
-
-    </footer>
+    <div>
+        <footer>
+            <p id='copy'>Copyright © 2021</p>
+            <p id='power'>Powered by Keith Kadima</p>
+             
+        </footer>
+    </div>
+      
     
 </body>
 
