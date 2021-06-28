@@ -1,12 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin:0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif
     
 }
-.pic{
-    margin-top: 35px;
-}
+
 .navbar{
    height: 50px;
     
@@ -19,9 +18,22 @@
     padding: 30px;     
     width: 100%;
     height: 600px;
-    
-          
+             
 
+ }
+
+ .column{
+     display: flex;
+     
+ }
+ .col{
+     width: 100%;
+     
+ }
+
+ .pic{
+     width: 300px;
+     height: 100%
  }
  
 
@@ -30,7 +42,7 @@
     width: 100%;
 }
 .intro{
-    display: flex;
+    margin-top: 80px;
 }
 .aboutme{
     margin: 0px 30px 30px 30px;
@@ -48,8 +60,8 @@
 #welcome-section img{
     
     border-radius: 50%;
-    width: 300px;
-    height: 280px;
+    width: 100%;
+    height: 300px;
     margin-top: 10px;
     margin-bottom: 15px
     
@@ -113,25 +125,32 @@ footer{
 
 .card-img-top {
     width: 100%;
-    height: 15vw;
+   
     object-fit: contain;
 }
 .card{
     box-shadow: 0 4px 8px  rgba(14, 13, 13, 0.2), 0 6px 20px  rgba(9, 8, 8, 0.19);
-    margin-top: 5px;
-    border-radius: 10px
+    border-radius: 10px;
+    width:100%;
 }
 
-.skills h2{
-    margin-top: 80px;
- }
-.aboutme h2{
-     margin-top: 80px;
- }
-.intro h2{
-    margin-top: 70px;
-}
+
+
+
 .cards{
     text-align: center;
     
 }
+
+@media only screen   
+and (min-width: 320px)   
+and (max-width: 575px)  
+{ 
+    .column{
+        
+        flex-direction: column;
+        flex-shrink: 0;
+        
+    }
+    
+} 
