@@ -17,7 +17,7 @@
     background-color: silver; 
     padding: 30px;     
     width: 100%;
-    height: 600px;
+    height: 100%;
              
 
  }
@@ -151,6 +151,12 @@ and (max-width: 575px)
         flex-direction: column;
         flex-shrink: 0;
         
+    }
+    .pic{
+        margin-left: 100px;
+    }
+    .aboutme{
+        margin-right: 170px;
     }
     
 } 
